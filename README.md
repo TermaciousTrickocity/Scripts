@@ -1,11 +1,11 @@
 # Timed Checkpoint Loop
 > Plays nicely with theater film playback.
 
-```
+```css
 (script continuous void reiko_needs_a_checkpoint
     (sleep_until
         (begin
-            (sleep (* 30.0 60.0 2.0)) ; Will trigger every 2 minutes!
+            (sleep (* 30.0 60.0 2.0)) ; Will trigger every two minutes!
             (game_save_no_timeout)
             false
         )
@@ -15,14 +15,14 @@
 
 # Player input trigger
 > Useful for instances where you don't have the menu option to trigger a revert to last checkpoint. (Multiplayer)
-```
+```css
 (script continuous void reiko_needs_a_checkpoint
     (if (player_action_test_dpad_up)
         (begin
             (chud_post_message_hack "Saving...")
             (game_save_no_timeout)
             (player_disable_movement true)
-            (sleep (* 30.0 60.0 0.02))
+            (sleep (* 30.0 60.0 0.02)) ; Two second delay for montage editors using theater.
             (player_disable_movement false)
             (player_action_test_reset)
         )
@@ -61,14 +61,15 @@ Causes the player to resume from the most recent checkpoint.
 
 ## Skulls
 ### Enable/Disable
-```
+```css
 (skull_enable skull_name boolean)
 ```
 Example:
-```
+```css
 (skull_enable skull_tilt true)
 (skull_enable skull_tilt false)
 ```
+## Skull Types
 ### Iron
 > The Iron skull causes the mission to restart if the player dies during the campaign for whatever reason. On campaign Cooperative Play, if even one player dies everyone is forced to revert back to the last reached checkpoint. In Firefight, the skull disables respawning after the player died.
 ```
