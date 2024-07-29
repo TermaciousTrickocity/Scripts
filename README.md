@@ -81,7 +81,7 @@ Example:
 (skull_black_eye)
 ```
 ### Tough Luck
-> Tough Luck skull causes enemies to evade vehicles, dodge grenades and heavy weapon projectiles.
+> The Tough Luck skull causes enemies to evade vehicles, dodge grenades and heavy weapon projectiles.
 ```
 (skull_tough_luck)
 ```
