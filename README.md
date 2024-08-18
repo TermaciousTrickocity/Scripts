@@ -59,12 +59,21 @@ Causes the player to resume from the most recent checkpoint.
 (game_revert)
 ```
 ## Zoneset loading
+Loading/Switching
 ```css
 (switch_zone_set zone_set)
+```
+Prevents zonesets from loading
+```css
+(disable_switch_zone_sets boolean)
 ```
 Example:
 ```css
 (switch_zone_set cinematic_zone_set)
+```
+```css
+(disable_switch_zone_sets true)
+(disable_switch_zone_sets false)
 ```
 ## Skulls
 ### Enable/Disable
