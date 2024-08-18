@@ -132,7 +132,8 @@ Example:
 (skull_mythic)
 ```
 ### Assassin
-```
+> The Assassin skull gives the player a Spartan laser in the next mission.
+``` 
 (skull_assassin)
 ```
 ### Blind
