@@ -58,7 +58,14 @@ Causes the player to resume from the most recent checkpoint.
 ```
 (game_revert)
 ```
-
+## Zoneset loading
+```css
+(switch_zone_set zone_set)
+```
+Example:
+```css
+(switch_zone_set cinematic_zone_set)
+```
 ## Skulls
 ### Enable/Disable
 ```css
